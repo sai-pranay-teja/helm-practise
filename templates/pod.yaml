@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Values.component }}
+  labels:
+    {{- include "p-1.labels" . | nindent 4 }}
+
